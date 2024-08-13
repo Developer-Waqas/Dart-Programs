@@ -1,15 +1,19 @@
+import 'dart:io';
+
 void main() {
-  double celcius, farenhiet, temp;
+  double cTemp, fTemp;
 
-  //Temperature in Celius to Farenhiet
-  print("Celcius to Farenhiet");
-  celcius = 37;
-  temp = (celcius * 9 / 5) + 32;
-  print("37 C in Farenhiet: $temp F");
+  //Temperature From Celcius to Farenhiet
+  stdout.write('Enter Temperature in Celcius: ');
+  cTemp = double.parse(stdin.readLineSync()!);
 
-  //Temperature in Farenhiet to Celcius
-  print("Farenhiet to Celcius");
-  farenhiet = 98.6;
-  temp = (farenhiet - 32) * 5 / 9;
-  print("98.6 F in Celcius: $temp C");
+  fTemp = cTemp * 9 / 5 + 32;
+  print("Temperature in Farenhiet: $fTemp");
+
+  //Temperature from Farenhiet from Celcius
+  stdout.write("Enter temperature in Farenhiet: ");
+  fTemp = double.parse(stdin.readLineSync()!);
+
+  cTemp = (fTemp - 32) * 5 / 9;
+  print('Temperature in Celcius: $cTemp');
 }

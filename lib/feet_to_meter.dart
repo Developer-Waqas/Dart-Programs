@@ -1,19 +1,19 @@
+import 'dart:io';
+
 void main() {
-  double feet, meter, result;
+  double foot, meter;
 
   //Foot in meter
-  print("Foot in Meter");
-  feet = 0.3048;
-  meter = 20;
-  result = meter * feet;
-
-  print("20 Foots in Meter: $result m");
+  stdout.write('Enter length in Foot: ');
+  foot = double.parse(stdin.readLineSync()!);
+  meter = foot * 0.3048;
+  print('Length in Meter: $meter');
 
   //Meter in foots
-  print("Meter in foots");
-  meter = 20;
-  feet = 3.28084;
-  result = feet * meter;
+  stdout.write('Enter length in Meter: ');
+  meter = double.parse(stdin.readLineSync()!);
+  foot = meter * 3.28084;
+  print('Length in Foot: $foot');
 
-  print("20 meters in Foots: $result Ft");
+  stdout.write('<<<---THANKS FOR USING--->>>');
 }

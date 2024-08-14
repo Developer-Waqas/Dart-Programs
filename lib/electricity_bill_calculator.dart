@@ -18,11 +18,17 @@ void main() {
   if (consumedUnits >= 0 && consumedUnits <= 100) {
     totalBill = consumedUnits * 20;
     print('Your electricity bill is Rs. $totalBill');
+    print('Your consumed units are $consumedUnits');
+    print('Cost per unit 20');
   } else if (consumedUnits > 100 && consumedUnits <= 200) {
     totalBill = consumedUnits * 30;
     print('Your electricity bill is Rs. $totalBill');
+    print('Your consumed units are $consumedUnits');
+    print('Cost per unit 30');
   } else {
     totalBill = consumedUnits * 50;
     print('Your electricity bill is Rs. $totalBill');
+    print('Your consumed units are $consumedUnits');
+    print('Cost per unit 50');
   }
 }

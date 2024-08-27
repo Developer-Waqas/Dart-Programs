@@ -16,4 +16,13 @@ void main() {
 
   names.sort();
   print(names);
+
+  Map<String, dynamic> personalDetail = {
+    "name": "Waqas",
+    "age": "20",
+  };
+  personalDetail.forEach((key, value) {
+    print(personalDetail.keys);
+    print(personalDetail.values);
+  });
 }

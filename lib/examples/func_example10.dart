@@ -11,7 +11,7 @@ void main() {
 String isLogin(String userName, String userPassword,
     {bool isUserLogin = true}) {
   String status = isUserLogin
-      ? 'You have succesfully login to your Account!'
+      ? 'You have succesfully login to your account!'
       : 'Please create your account firstly!';
   print(status);
   return status;

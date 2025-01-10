@@ -9,11 +9,10 @@ void main() {
   if consumed unit is grater 200 than cost per unit is 50
    */
 
-  int consumedUnits, costPerUnits, totalBill;
+  int consumedUnits, totalBill;
 
   stdout.write('Enter consumed units: ');
   consumedUnits = int.parse(stdin.readLineSync()!);
-  costPerUnits = 0;
 
   if (consumedUnits >= 0 && consumedUnits <= 100) {
     totalBill = consumedUnits * 20;

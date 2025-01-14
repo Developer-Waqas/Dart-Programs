@@ -1,7 +1,7 @@
 import 'dart:io';
 
 void main() {
-  print('<<<---Librery Managment System--->>>\n');
+  print('\n<<<---Librery Managment System--->>>\n');
   Librery librery = Librery();
 
   while (true) {
@@ -60,7 +60,7 @@ class Librery {
 
   void addBook(Book book) {
     books.add(book);
-    print('Book added Successfully!\n');
+    print('\nBook added Successfully!\n');
   }
 
   void listALlBooks() {

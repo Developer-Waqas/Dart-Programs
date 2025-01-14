@@ -84,7 +84,7 @@ class Librery {
         break;
       }
       if (!found) {
-        print('Book was not found!\n');
+        print('Book was not found!');
         break;
       }
     }

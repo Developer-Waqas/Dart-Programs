@@ -2,17 +2,21 @@ import 'dart:io';
 
 void main() {
   EvenOdd evenOdd = EvenOdd();
-  evenOdd.evenOdd();
+  evenOdd.checkEvenOdd();
 }
 
 class EvenOdd {
-  void evenOdd() {
+  void checkEvenOdd() {
     stdout.write('Enter a Number: ');
-    int x = int.parse(stdin.readLineSync()!);
-    if (x % 2 == 0) {
-      print('$x is Even Number!');
-    } else {
-      print('$x is Odd Number!');
+    try {
+      int x = int.parse(stdin.readLineSync()!);
+      if (x % 2 == 0) {
+        print('$x is an Even Number!');
+      } else {
+        print('$x is an Odd Number!');
+      }
+    } catch (e) {
+      print('Invalid input. Please enter a valid integer.');
     }
   }
 }

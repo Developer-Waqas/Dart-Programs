@@ -10,6 +10,4 @@ class Student {
     this.id,
     this.age,
   );
-
-  void addStudent(Student student) {}
 }
